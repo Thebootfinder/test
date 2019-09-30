@@ -2,8 +2,8 @@
   <v-app>
     <v-app-bar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>Quizz Wise Score  </span>
+        <span class="font-weight-light">ZZ Compagnie</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
@@ -22,15 +22,15 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    HelloWorld
   },
   data: () => ({
     //
-  }),
-};
+  })
+}
 </script>

@@ -15,10 +15,10 @@
 
       <v-flex mb-4>
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
+          Welcome to Quizz o'Time
         </h1>
         <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
+          coucou
           <br>please join our online
           <a href="https://community.vuetifyjs.com" target="_blank">Discord Community</a>
         </p>
@@ -29,6 +29,15 @@
         xs12
       >
         <h2 class="headline font-weight-bold mb-3">What's next?</h2>
+
+  <h1>Quiz on Important Facts</h1>
+  <div class="quiz-container">
+    <div id="quiz"></div>
+  </div>
+  <button id="previous">Previous Question</button>
+  <button id="next">Next Question</button>
+  <button id="submit">Submit Quiz</button>
+  <div id="results"></div>
 
         <v-layout justify-center>
           <a
@@ -85,58 +94,61 @@
 </template>
 
 <script>
+
 export default {
   data: () => ({
     ecosystem: [
       {
         text: 'vuetify-loader',
-        href: 'https://github.com/vuetifyjs/vuetify-loader',
+        href: 'https://github.com/vuetifyjs/vuetify-loader'
       },
       {
         text: 'github',
-        href: 'https://github.com/vuetifyjs/vuetify',
+        href: 'https://github.com/vuetifyjs/vuetify'
       },
       {
         text: 'awesome-vuetify',
-        href: 'https://github.com/vuetifyjs/awesome-vuetify',
-      },
+        href: 'https://github.com/vuetifyjs/awesome-vuetify'
+      }
     ],
     importantLinks: [
       {
         text: 'Documentation',
-        href: 'https://vuetifyjs.com',
+        href: 'https://vuetifyjs.com'
       },
       {
         text: 'Chat',
-        href: 'https://community.vuetifyjs.com',
+        href: 'https://community.vuetifyjs.com'
       },
       {
         text: 'Made with Vuetify',
-        href: 'https://madewithvuejs.com/vuetify',
+        href: 'https://madewithvuejs.com/vuetify'
       },
       {
         text: 'Twitter',
-        href: 'https://twitter.com/vuetifyjs',
+        href: 'https://twitter.com/vuetifyjs'
       },
       {
         text: 'Articles',
-        href: 'https://medium.com/vuetify',
-      },
+        href: 'https://medium.com/vuetify'
+      }
     ],
     whatsNext: [
       {
         text: 'Explore components',
-        href: 'https://vuetifyjs.com/components/api-explorer',
+        href: 'https://vuetifyjs.com/components/api-explorer'
       },
       {
         text: 'Select a layout',
-        href: 'https://vuetifyjs.com/layout/pre-defined',
+        href: 'https://vuetifyjs.com/layout/pre-defined'
       },
       {
         text: 'Frequently Asked Questions',
-        href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-      },
-    ],
-  }),
-};
+        href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions'
+      }
+    ]
+  })
+}
+
+
 </script>
